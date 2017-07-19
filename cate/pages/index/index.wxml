@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<!--顶部是一个滚动条-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!---中间是四个分类-->
+
+<view class="section sort" style="height:60px;">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item" hover-class="active">美食</view>
+    <view class="flex-item" hover-class="active">甜点</view>
+    <view class="flex-item" hover-class="active">工作餐</view>
+    <view class="flex-item" hover-class="active">夜宵</view>
+  </view>
+</view>
+
+<!--然后是一些列表推送-->
+<view class="page">
+  <view class="page__bd">
+    <view class="section section_gap list" wx:for="{{listImage}}" wx:for-item="item">
+      <view class="section__ctn">
+        <navigator url="/pages/index/detail/index?mark={{item.mark}}" hover-class="navigator-hover" style="height:100%">
+           <image style=" width:30%;height: 100%; background-color: #eeeeee;" src="{{item.src}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--底部-->
+<view class="section bottom">
+  <view class="flex-wrp btn-area" style="flex-direction:row;">
+    <view class="flex-item" hover-class="active"><navigator url="/pages/index/index" hover-class="navigator-hover">首页</navigator></view>
+    <view class="flex-item" hover-class="active"><navigator url="/pages/concat/index" hover-class="navigator-hover">联系</navigator></view>  </view>
+</view>
+
+<!--一些其他的功能-->
+<!--获取位置-->
+<button class="map" bindtap="getLocation">map</button>
+
+
+

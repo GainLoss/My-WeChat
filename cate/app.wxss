@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/*底部*/
+.bottom{
+  position:fixed;
+  width:100%;
+  bottom:0px;
+  left:0px;
+}
+.bottom .flex-item {
+  width:50%;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  float:left;
+  background:#fbe8e8;
+  display:block;
+}
+.bottom .active{
+  background:#f2d9d9
+}

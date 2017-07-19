@@ -1,0 +1,14 @@
+<!--中间的内容-->
+<view class="section list">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item" hover-class="active">如果遇到什么问题，可以在发邮件直接联系我们 zyx19930719@126.com</view>
+  </view>
+</view>
+
+
+<!--底部-->
+<view class="section bottom">
+  <view class="flex-wrp btn-area" style="flex-direction:row;">
+    <view class="flex-item" hover-class="active"><navigator url="/pages/index/index" hover-class="navigator-hover">首页</navigator></view>
+    <view class="flex-item" hover-class="active"><navigator url="/pages/concat/index" hover-class="navigator-hover">联系</navigator></view>  </view>
+</view>

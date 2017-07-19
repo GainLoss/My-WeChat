@@ -1,0 +1,5 @@
+<view class="section sort" style="height:60px;">
+  <view class="flex-wrp" style="flex-direction:row;">
+    {{mark}}
+  </view>
+</view>
